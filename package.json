@@ -1,0 +1,19 @@
+{
+  "name": "lightpaint-live-cables",
+  "version": "1.0.0",
+  "description": "Realtime light painting web app",
+  "main": "index.html",
+  "scripts": {
+    "pull": "npx cables --export 6kk1nZ -d ./ -b -c -a all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/positlabs/lightpaint-live-cables.git"
+  },
+  "author": "positlabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/positlabs/lightpaint-live-cables/issues"
+  },
+  "homepage": "https://github.com/positlabs/lightpaint-live-cables#readme"
+}
