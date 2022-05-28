@@ -5,8 +5,8 @@
   "theme_color": "lime",
   "background_color": "#2196f3",
   "display": "fullscreen",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/lightpaint-live-cables/",
+  "start_url": "/lightpaint-live-cables/",
   "icons": [
     {
       "src": "assets/logo-green-icon-128.png",
