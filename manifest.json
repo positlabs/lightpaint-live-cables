@@ -1,4 +1,5 @@
 {
+  "id": "lightpaint-live-cables",
   "name": "LIGHTPAINT LIVE",
   "short_name": "LIGHTPAINT LIVE",
   "theme_color": "lime",
@@ -6,8 +7,8 @@
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
-  "icons": {
+  "icons": [{
     "src": "assets/logo-green-icon.icns",
     "sizes": "128x128 256x256 512x512 1024x1024"
-  }
+  }]
 }
