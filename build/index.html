@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>LIGHTPAINT LIVE</title>
+    <title>LPL Prototype</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-    <meta itemprop="name" content="LIGHTPAINT LIVE">
-    <meta itemprop="description" content="Realtime light painting webapp">
-    <meta itemprop="image" content="build/screenshot.png">
-    <meta name="description" content="Realtime light painting webapp" />
-    <link rel="icon" type="image/x-icon" href="./assets/logo-green-icon-128.png">
+    <meta itemprop="name" content="LPL Prototype">
+    <meta itemprop="description" content="made with cables">
+    <meta itemprop="image" content="screenshot.png">
+    <meta name="description" content="made with cables" />
 
     <style>
         body {
@@ -17,14 +16,13 @@
             background-color: #000;
             color: #fff;
             font-family: Helvetica, Arial, sans-serif;
-            overflow: hidden;
-            /* disable scrolling / rubberband effect on mobile */
+            overflow: hidden; /* disable scrolling / rubberband effect on mobile */
         }
 
         canvas {
             display: block;
             position: absolute;
-            outline: 0;
+            outline:0;
         }
 
         * {
@@ -61,17 +59,19 @@
 <body>
     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
     <footer>
-        <a href='https://cables.gl/edit/6kk1nZ'>edit the project</a>
+        made with <a href='https://cables.gl'>cables</a>
+        <!-- we would greatly appreciate if you link cables somewhere on your site! and tell us your website! thanks <3 :) -->
     </footer>
 
-    <libs />
-    <script type="text/javascript" src="build/js/patch.js" async></script>
-    <corelibs />
+    <libs/>
+    <script type="text/javascript" src="js/patch.js" async></script>
+    <corelibs/>
 
     <script>
 
         // disable rubberband effect on mobile devices
-        document.getElementById('glcanvas').addEventListener('touchmove', (e) => { e.preventDefault(); }, false);
+        document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+
 
         function patchInitialized(patch) {
             // You can now access the patch object (patch), register variable watchers and so on

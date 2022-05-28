@@ -2,5 +2,6 @@
 - cables by undefined development (http://undev.studio)
 - glmatrix by toji (https://github.com/toji/gl-matrix)
 - Photoshop math GLSL shaders by Romain Dura (https://mouaif.wordpress.com/2009/01/05/photoshop-math-with-glsl-shaders/)
-- ops by cables user positlabs (https://cables.gl/user/positlabs)
 - ops by cables user tim (https://cables.gl/user/tim)
+- ops by cables user stephan (https://cables.gl/user/stephan)
+- ops by cables user andro (https://cables.gl/user/andro)

@@ -4,7 +4,8 @@
   "description": "Realtime light painting web app",
   "main": "index.html",
   "scripts": {
-    "pull": "npx cables --export 6kk1nZ -d ./ -b -c -a all"
+    "pull": "npx cables --export 6kk1nZ -d ./build -b -c -a all",
+    "serve": "npx http-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/positlabs/lightpaint-live-cables/issues"
   },
-  "homepage": "https://github.com/positlabs/lightpaint-live-cables#readme"
+  "homepage": "https://github.com/positlabs/lightpaint-live-cables#readme",
+  "devDependencies": {
+    "@cables/cables": "^0.8.3",
+    "http-server": "^14.1.0"
+  }
 }

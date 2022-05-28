@@ -1,0 +1,13 @@
+{
+  "name": "LIGHTPAINT LIVE",
+  "short_name": "LIGHTPAINT LIVE",
+  "theme_color": "lime",
+  "background_color": "#2196f3",
+  "display": "fullscreen",
+  "scope": "/",
+  "start_url": "/",
+  "icons": {
+    "src": "assets/logo-green-icon.icns",
+    "sizes": "72x72 96x96 128x128 256x256"
+  }
+}
