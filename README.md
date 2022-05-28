@@ -2,6 +2,8 @@
 
 [Lightpaint Live](https://lightpaintlive.com/) is a family of apps for realtime light painting. This iteration uses cables.gl and web tech. The idea is to make it easy to use (no app to install), and relatively simple to build on top of, even if you aren't a programmer. 
 
+If you simply want to use the app, visit https://positlabs.github.io/lightpaint-live-cables/
+
 ![splash](./assets/splash.jpg)
 
 ![screenshot](./assets/screenshot.jpg)
