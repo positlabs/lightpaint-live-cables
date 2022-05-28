@@ -1,4 +1,5 @@
-const generateServiceWorkers = require('generate-service-worker');
+// https://www.npmjs.com/package/generate-service-worker
+const generateServiceWorkers = require('generate-service-worker')
 const fs = require('fs')
 
 const serviceWorkers = generateServiceWorkers({
@@ -10,5 +11,6 @@ const serviceWorkers = generateServiceWorkers({
       matches: ['\\.js']
     }],
   }
-});
+})
+
 fs.writeFileSync('sw.js', serviceWorkers.main)

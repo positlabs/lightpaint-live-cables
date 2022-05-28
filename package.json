@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "pull": "npx cables --export 6kk1nZ -d ./build -b -c -a all",
-    "serve": "npx http-server"
+    "serve": "npx http-server",
+    "sw": "node ./generate-service-worker.js"
   },
   "repository": {
     "type": "git",
