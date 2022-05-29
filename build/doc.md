@@ -7,5 +7,11 @@
 * __output__ ```Texture```
 * __texture__ ```Texture```
 * __useWebcam__ ```Number```
+* __video_devices__ ```Array```
+* __videoTextureAspect__ ```Number```
+* __videoTextureHeight__ ```Number```
+* __videoTextureWidth__ ```Number```
+* __webcam_index__ ```Number```
+* __webcam_texture__ ```Texture```
 * __width__ ```Number```
 
