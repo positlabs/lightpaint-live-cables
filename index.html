@@ -4,11 +4,19 @@
 <head>
     <title>LIGHTPAINT LIVE</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-    <meta itemprop="name" content="LIGHTPAINT LIVE">
-    <meta itemprop="description" content="Realtime light painting webapp">
-    <meta itemprop="image" content="build/screenshot.png">
-    <meta name="description" content="Realtime light painting webapp" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+    
+    <meta name="keywords" content="light painting, live light painting, paint live, light paint live, light painting online, light painting software, light painting tools, light painting photography, light painting tutorials, webcam, photography, photo app, chrome app, android, iOS, long exposure">
+    <meta property="og:url" content="https://app.lightpaintlive.com">
+    <meta property="og:site_name" content="Lightpaint Live">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lightpaintlive.com/assets/images/og-image.png">
+    <meta property="og:description" content="Real-time light painting software.">
+    <meta property="fb:app_id" content="331545326882067">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
     <link rel="icon" type="image/x-icon" href="./assets/logo-green-icon-128.png">
     <link rel="manifest" href="manifest.json">
     <script src="sw.js"></script>
@@ -18,7 +26,7 @@
             margin: 0;
             background-color: #000;
             color: #fff;
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: 'Ubuntu', sans-serif;
             overflow: hidden;
             /* disable scrolling / rubberband effect on mobile */
         }
@@ -45,17 +53,47 @@
             left: 0;
             box-sizing: border-box;
             width: 100vw;
-            padding: 20px;
+            padding: 20px 40px;
             text-align: right;
             font-size: 18px;
-            color: var(--highlight-color);
+            color: white;
         }
 
         footer a,
         footer a:hover,
         footer a:active {
-            color: var(--highlight-color);
+            color: lime;
+            text-decoration: none;
         }
+
+        #lpl-logo {
+            float: left;
+            margin-left: -22px;
+            background-image: url(./assets/logo-green-icon-512.png);
+            width: 100px; height: 100px;
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .logo-type {
+            display: block;
+            float: left;
+            user-select: none;
+        }
+        .logo-type span {
+            font-family: 'Oswald', sans-serif;
+            line-height: 100px;
+            color: white;
+        }
+        .logo-type span:first-child {
+            font-weight: 400;
+        }
+
+        .sidebar-cables {
+            --sidebar-color: lime !important;
+        }
+
     </style>
 
 </head>
@@ -63,7 +101,14 @@
 <body>
     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
     <footer>
-        <a href='https://cables.gl/edit/6kk1nZ'>edit the project</a>
+        <div class="left">
+            <a href="https://lightpaintlive.com" id="lpl-logo"></a>
+            <a href="https://lightpaintlive.com" class="logo-type">
+                <span>LIGHTPAINT</span>
+                <span>&nbsp;LIVE</span>
+            </a>
+        </div>
+        <a class="edit" href='https://cables.gl/edit/6kk1nZ'>view cables</a>
     </footer>
 
     <libs />
