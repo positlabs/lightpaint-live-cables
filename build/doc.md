@@ -4,6 +4,7 @@
 * __decay__ ```Number```
 * __ghosting__ ```Number```
 * __height__ ```Number```
+* __output__ ```Texture```
 * __texture__ ```Texture```
 * __useWebcam__ ```Number```
 * __width__ ```Number```
