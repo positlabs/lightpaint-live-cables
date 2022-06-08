@@ -5,6 +5,8 @@
 * __ghosting__ ```Number```
 * __height__ ```Number```
 * __output__ ```Texture```
+* __requestedHeight__ ```Number```
+* __requestedWidth__ ```Number```
 * __texture__ ```Texture```
 * __useWebcam__ ```Number```
 * __video_devices__ ```Array```
